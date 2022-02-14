@@ -1,0 +1,26 @@
+{% extends 'newsapp/base.html' %}
+
+{% block content %}
+
+<h1 style="color: #1E90FF" align="center">Путеводитель по событиям.</h1>
+<ul class="list-articles">
+	{% for p in posts %}
+			<li><div class="article-panel">
+	<p class="first">{{p.cat}}</p>
+	<p class="last">{{p.time_update|date:"d-m-Y"}}</p>
+</div>
+
+{% if p.image %}
+	<p><img class="img-article-left thumb" src="{{p.image.url}}"></p>
+{% endif %}
+
+				<h2>{{p.title}}</h2>
+	{% autoescape off %}
+	{{p.content|linebreaks|truncatewords:50}}
+	{% endautoescape %}
+			<div class="clear"></div>
+			<p class="link-read-post"><a href="{{ p.get_absolute_url }}">Читать пост</a></p>
+			</li>
+	{% endfor %}
+</ul>
+{% endblock %}

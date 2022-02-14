@@ -1,0 +1,54 @@
+{% extends 'newsapp/base.html' %}
+{% load news_tags %}
+
+
+
+
+{% block content %}
+    <p><a href="/">Вернуться назад</a></p>
+
+<h1>{{post.title}}</h1>
+
+
+{% if post.image %}
+<p><img class="img-article-left" src="{{post.image.url}}"></p>
+{% endif %}
+{% autoescape off %}
+{{post.content|linebreaks}}
+
+<h5>{{post.author}}</h5>
+<h6>{{post.time_create}}</h6>
+{% if post.link %}
+<p><a href="{{ post.link }}" target="blank">Источник</a></p>
+{% endif %}
+<p><a href="{{ post.cat.get_absolute_url }}">{{ post.cat }}</a></p> <br>
+
+<hr>
+
+<ul>
+{% for comment in comments %}
+    <li><div class="comment">
+        <p class="info">
+        <h5>{{ comment.name }}  •  {{ comment.created|date:'M d'}}</h5>
+        </p>
+        {{ comment.body|linebreaks }}
+    </div></li><hr>
+
+{% endfor %}
+</ul>
+{% if new_comment %}
+    <h2>Комментарий добавлен</h2>
+{% else %}
+
+    <form action="." method="post">
+        {{ comment_form.as_p }}
+        {% csrf_token %}
+        <p><input type="submit" value="КОММЕНТИРОВАТЬ"></p>
+    </form>
+{% endif %}
+
+
+{% endautoescape %}
+
+
+{% endblock %}

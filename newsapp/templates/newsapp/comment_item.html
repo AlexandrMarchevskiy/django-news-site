@@ -1,0 +1,9 @@
+{% if active_comment %}
+ <div class="alert alert-success">
+            {{active_comment}}
+
+    </div>
+    {% endif %}
+<h6>{{item.author}} | {{item.created|date:'M d'}}</h6>
+<p>{{item.body}}</p>
+<hr>

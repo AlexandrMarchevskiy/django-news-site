@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Kurs/.idea/Kurs.iml" filepath="$PROJECT_DIR$/../Kurs/.idea/Kurs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Selenium/.idea/Selenium.iml" filepath="$PROJECT_DIR$/../Selenium/.idea/Selenium.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../кодирование/coolsite/.idea/coolsite.iml" filepath="$PROJECT_DIR$/../../кодирование/coolsite/.idea/coolsite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../кодирование/django-course-youtube-master/.idea/django-course-youtube-master.iml" filepath="$PROJECT_DIR$/../../кодирование/django-course-youtube-master/.idea/django-course-youtube-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../flaskblog/.idea/flaskblog.iml" filepath="$PROJECT_DIR$/../flaskblog/.idea/flaskblog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../flasksite/.idea/flasksite.iml" filepath="$PROJECT_DIR$/../flasksite/.idea/flasksite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../flaskstepik/.idea/flaskstepik.iml" filepath="$PROJECT_DIR$/../flaskstepik/.idea/flaskstepik.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../football_players_project/.idea/football_players_project.iml" filepath="$PROJECT_DIR$/../football_players_project/.idea/football_players_project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../movie_category_proj/.idea/movie_category_proj.iml" filepath="$PROJECT_DIR$/../movie_category_proj/.idea/movie_category_proj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/news.iml" filepath="$PROJECT_DIR$/.idea/news.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../personal_portfolio-project/.idea/personal_portfolio-project.iml" filepath="$PROJECT_DIR$/../personal_portfolio-project/.idea/personal_portfolio-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../todowoo/.idea/todowoo.iml" filepath="$PROJECT_DIR$/../../todowoo/.idea/todowoo.iml" />
+    </modules>
+  </component>
+</project>

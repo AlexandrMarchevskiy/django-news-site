@@ -147,3 +147,8 @@ CACHES = {
         'LOCATION': os.path.join(BASE_DIR, 'news_cache'),
     }
 }
+
+try:
+    from .local_settings import *
+except ImportError:
+    print('Looks like no local file. You must be on production')
